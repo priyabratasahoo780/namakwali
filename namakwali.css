@@ -1242,6 +1242,13 @@ button:hover {
     align-items: center;
     justify-content: end;
 }
+.list_section ul li a {
+    text-decoration: none;
+    display: flex;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: black;
+}
 
 @media all and (max-width:1200px) {
     .started {
@@ -1484,6 +1491,7 @@ button:hover {
         border-radius: 1.2vw;
         overflow: hidden;
     }
+    
 }
 
 @media all and(max-width:600px) {
