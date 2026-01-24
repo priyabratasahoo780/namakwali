@@ -1085,6 +1085,7 @@ button:hover {
     height: 3vw;
     background-color: rgb(143, 103, 70);
     border: 1px solid white;
+    padding:10px;
 }
 
 ::placeholder {
@@ -1230,7 +1231,6 @@ button:hover {
     font-weight: 600;
     align-items: center;
 }
-
 .hopper2 {
     border: 1px solid rgb(0, 255, 123);
     width: 43vw;
