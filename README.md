@@ -8,21 +8,20 @@
 <p align="center">
   <strong>A pixel-perfect front-end clone of the official Namakwali website</strong> — featured on Shark Tank India 🦈
   <br/>
-  Built with pure HTML, CSS & vanilla JavaScript · Responsive · Study Purpose
+  Built with pure <strong>HTML & CSS only</strong> · Multi-Page · Study Purpose
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white" alt="Cloudinary"/>
-  <img src="https://img.shields.io/badge/Shark%20Tank%20India-FF6B00?style=for-the-badge&logo=tv&logoColor=white" alt="Shark Tank India"/>
+  <img src="https://img.shields.io/badge/Shark%20Tank%20India-FF6B00?style=for-the-badge&logoColor=white" alt="Shark Tank India"/>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Purpose-Study%20Only-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-Educational-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/No%20JavaScript-black?style=for-the-badge&logo=javascript&logoColor=yellow"/>
 </p>
 
 ---
@@ -35,18 +34,18 @@
 
 **Namakwali** is a celebrated Himalayan food brand from Uttarakhand, India, famous for its flagship product — *Pisyu Loon* (flavoured rock salt) — and an extensive range of authentic Pahadi (mountain) food products. The brand gained massive popularity after its iconic appearance on **Shark Tank India**.
 
-This repository is a **meticulously crafted front-end clone** of their e-commerce platform, reimagined and rebuilt as a frontend web development practice project. The goal was to study real-world e-commerce UI patterns, responsive layouts, CSS design systems, and multi-page architectures.
+This repository is a **meticulously crafted front-end clone** built using **only HTML and CSS** — no JavaScript whatsoever. The goal was to master real-world e-commerce UI patterns, responsive layouts using pure CSS, multi-page structures, and advanced CSS techniques like CSS-only slideshows and grid-based designs.
 
 ---
 
-## ✨ Pages & Features
+## ✨ Pages Overview
 
-| Page | File | Description |
-|------|------|-------------|
-| 🏠 **Home** | `index.html` | Hero slideshow, category grid, best-sellers, brand story |
-| 📞 **Contact Us** | `namakwali2.html` | Contact form & social links |
-| 🛒 **Our Shop** | `namakwali3.html` | Full product listing page |
-| 📝 **Blogs** | `namakwali4.html` | Blog articles on Pahadi lifestyle |
+| Page | HTML File | CSS File | Description |
+|------|-----------|----------|-------------|
+| 🏠 **Home** | `index.html` | `namakwali.css` | Hero slideshow, category grid, best-sellers, brand story |
+| 📞 **Contact Us** | `namakwali2.html` | `namakwali2.css` | Contact form & social links |
+| 🛒 **Our Shop** | `namakwali3.html` | `namakwali3.css` | Full product listing page |
+| 📝 **Blogs** | `namakwali4.html` | `namakwali4.css` | Blog articles on Pahadi lifestyle |
 
 ---
 
@@ -63,12 +62,12 @@ This repository is a **meticulously crafted front-end clone** of their e-commerc
 
 ## 🚀 Getting Started
 
-**No installation required.** This is a static website — just open in any browser.
+**No installation. No build tools. No JavaScript.** Just pure HTML & CSS — open and run instantly.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/priyabratasahoo780/Resume-generater.git
-cd Resume-generater/namakwali
+git clone https://github.com/priyabratasahoo780/namakwali.git
+cd namakwali
 ```
 
 ### 2. Open in Browser
@@ -79,7 +78,7 @@ open index.html         # macOS
 xdg-open index.html     # Linux
 ```
 
-> 💡 For the best experience, use **Live Server** extension in VS Code for auto-reload.
+> 💡 For the best experience, use **Live Server** extension in VS Code for instant preview.
 
 ---
 
@@ -100,16 +99,17 @@ namakwali/
 
 ---
 
-## 🎨 Design Highlights
+## 🎨 CSS Design Highlights
 
-- **Responsive Layout** — Adapts seamlessly across desktop and mobile viewports
-- **Auto-Slideshow Hero** — Animated banner carousel on the home page
-- **Category Grid** — Clean, card-based product category navigation
-- **GST Ticker** — Top notification bar showing real-time offers
-- **Best Sellers Section** — Star ratings, discount badges, pricing, and Add to Cart
-- **Multi-Page Navigation** — Seamless routing between Home, Shop, Contact & Blog
-- **Cloudinary CDN** — All product images served via Cloudinary for fast loading
-- **Google Fonts** — Work Sans & Roboto typography for a polished look
+- **CSS-only Slideshow** — Auto-animated hero banner using CSS `@keyframes` and animations — zero JavaScript
+- **Flexbox & Grid Layouts** — Responsive product grids, category cards, and nav bars using pure CSS
+- **Hover Effects** — Interactive buttons, cards, and arrows styled entirely with CSS `:hover` pseudo-class
+- **Discount Badges** — Styled percentage-off labels overlaid on product images using CSS `position`
+- **Star Ratings** — Rendered purely using HTML `<img>` and CSS inline styling
+- **Top Ticker Bar** — GST price-cut news bar styled using CSS at the top of every page
+- **Multi-Page Navigation** — Clean `<a href>` based routing — no JS routing needed
+- **Google Fonts** — Work Sans & Roboto loaded via `<link>` for premium typography
+- **Cloudinary CDN Images** — All product images served via Cloudinary for blazing fast load times
 
 ---
 
@@ -117,15 +117,16 @@ namakwali/
 
 | Technology | Usage |
 |------------|-------|
-| **HTML5** | Page structure & semantic markup |
-| **CSS3** | Custom styling, Flexbox, Grid, animations |
-| **JavaScript** | Slideshow logic & DOM interactions |
-| **Cloudinary** | Image hosting & CDN delivery |
-| **Google Fonts** | Typography (Work Sans, Roboto) |
+| **HTML5** | Page structure, semantic markup, multi-page routing |
+| **CSS3** | Styling, Flexbox, Grid, animations, hover effects, responsive design |
+| **Cloudinary** | Image hosting and CDN delivery for all product photos |
+| **Google Fonts** | Work Sans & Roboto typography via `<link>` tag |
+
+> ✅ **No JavaScript was used in this project.** Every interactive and visual effect is achieved purely through HTML and CSS.
 
 ---
 
-## 📸 Key Product Highlights
+## 📸 Best-Selling Products Featured
 
 | Product | Original Price | Discounted Price | Savings |
 |---------|---------------|-----------------|---------|
@@ -135,20 +136,24 @@ namakwali/
 | Pahadi Multi Flora Honey (300g) | ~~Rs. 699.00~~ | **Rs. 375.00** | 37% OFF |
 | A2 Badri Cow Ghee (1L) | ~~Rs. 3,500.00~~ | **Rs. 2,554.00** | 27% OFF |
 | Dry Hempseed Chutney Powder (200g) | ~~Rs. 320.00~~ | **Rs. 260.00** | 18% OFF |
+| Pahadi Rajma (400g) | ~~Rs. 340.00~~ | **Rs. 224.00** | 34% OFF |
+| Pahadi Magic Mix Masala (200g) | ~~Rs. 275.00~~ | **Rs. 230.00** | 16% OFF |
 
 ---
 
-## 📚 Learning Objectives
+## 📚 What I Learned
 
-This project was built to develop and demonstrate:
+This project was built to develop and demonstrate core **HTML & CSS** skills:
 
-- ✅ **Multi-page static website architecture**
-- ✅ **CSS Flexbox & Grid** for complex responsive layouts
-- ✅ **CSS-only image carousels & slideshow animations**
-- ✅ **Real-world e-commerce UI component design** (product cards, navbar, badges, pricing)
-- ✅ **External asset management** with Cloudinary CDN
-- ✅ **Clean, semantic HTML5** structure and accessibility practices
-- ✅ **Typography & visual hierarchy** using Google Fonts
+- ✅ **CSS-only animations** — Slideshow / carousel with zero JavaScript using `@keyframes`
+- ✅ **Flexbox mastery** — Navigation bar, product cards, icon rows all built with Flexbox
+- ✅ **CSS Grid** — Category grids and responsive product listing layouts
+- ✅ **CSS positioning** — Overlaying discount badges and icons on product images
+- ✅ **Multi-page HTML structure** — Linking across 4 separate HTML pages cleanly
+- ✅ **CSS hover interactivity** — Buttons, cards, and arrows respond without any JS
+- ✅ **Semantic HTML5** — Proper use of `<nav>`, `<div>`, `<ul>`, `<a>`, `<img>` etc.
+- ✅ **External font & icon integration** — Google Fonts via `<link>` + Cloudinary SVG icons
+- ✅ **Real-world UI cloning** — Matching a live production e-commerce website with pure CSS
 
 ---
 
@@ -168,7 +173,7 @@ This project was built to develop and demonstrate:
 <p align="center">
   <strong>Priyabrata Sahoo</strong>
   <br/>
-  Frontend Developer · Web Design Enthusiast
+  Frontend Developer · HTML & CSS Enthusiast
   <br/><br/>
   <a href="https://github.com/priyabratasahoo780">
     <img src="https://img.shields.io/badge/GitHub-priyabratasahoo780-181717?style=for-the-badge&logo=github" alt="GitHub"/>
@@ -178,7 +183,7 @@ This project was built to develop and demonstrate:
 ---
 
 <p align="center">
-  <sub>⭐ If this project helped you learn something new, consider giving it a star!</sub>
+  <sub>⭐ If this project helped you learn HTML & CSS, consider giving it a star!</sub>
   <br/>
   <sub>🔴 <em>This is a study project only. All original content belongs to Namakwali.</em></sub>
 </p>
